@@ -1,62 +1,89 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #fefefe;
+  background: linear-gradient(to right, #fff0f5, #ffe4e1);
   color: #333;
-  scroll-behavior: smooth; /* Smooth scrolling */
+  scroll-behavior: smooth;
 }
 
 header {
-  background: #ff91a4;
+  background: #e75480;
   color: white;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
 
 nav {
-  text-align: center;
-  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 nav a {
-  margin: 0 15px;
   text-decoration: none;
   color: #e75480;
-  transition: color 0.3s ease;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #ff91a4;
+  color: #ff69b4;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 section {
-  padding: 1.5rem;
   background: white;
-  margin: 1rem auto;
-  max-width: 800px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
 }
 
 h2 {
-  color: #e75480;
+  color: #d6336c;
+  margin-bottom: 1rem;
 }
 
 .skill {
-  margin: 10px 0;
+  margin-bottom: 1rem;
+}
+
+.skill p {
+  margin: 0 0 5px;
 }
 
 .progress-bar {
   height: 10px;
-  background-color: #e75480;
+  background: #e75480;
   border-radius: 5px;
-  margin-top: 5px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  transition: width 1s ease-in-out;
 }
 
 footer {
+  background: #e75480;
+  color: white;
   text-align: center;
   padding: 1rem;
-  background: #ffedf1;
   font-size: 0.9rem;
 }
