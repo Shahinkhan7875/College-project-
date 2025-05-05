@@ -1,5 +1,4 @@
-// Optional JavaScript functionality
-console.log("Shahin Khan's portfolio loaded successfully.");
+console.log("Shahin Khan's portfolio (jordaar version) loaded!");
 
 // Smooth scroll navigation
 document.querySelectorAll('nav a').forEach(anchor => {
