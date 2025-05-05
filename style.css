@@ -4,6 +4,7 @@ body {
   padding: 0;
   background: #fefefe;
   color: #333;
+  scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 header {
@@ -11,6 +12,22 @@ header {
   color: white;
   text-align: center;
   padding: 2rem 1rem;
+}
+
+nav {
+  text-align: center;
+  margin: 1rem;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #e75480;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff91a4;
 }
 
 section {
@@ -24,6 +41,17 @@ section {
 
 h2 {
   color: #e75480;
+}
+
+.skill {
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #e75480;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 footer {
