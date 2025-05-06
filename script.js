@@ -1,17 +1,15 @@
-// Add animation trigger on scroll
-const cards = document.querySelectorAll('.card');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = 1;
-      entry.target.style.transform = 'translateY(0)';
+// Simple fade-in animation
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.animate').forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      el.classList.add('visible');
     }
   });
-}, {
-  threshold: 0.1
 });
 
-cards.forEach(card => {
-  observer.observe(card);
+// Contact form dummy handler
+document.getElementById('contact-form').addEventListener('submit', e => {
+  e.preventDefault();
+  alert("Thanks for your message! I'll get back to you soon.");
 });
