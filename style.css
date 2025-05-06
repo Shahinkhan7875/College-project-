@@ -97,12 +97,22 @@ main {
   border-radius: 10px;
   overflow: hidden;
   height: 10px;
+  position: relative;
 }
 
 .bar div {
   height: 100%;
   background: linear-gradient(45deg, #ff00cc, #3333ff);
   animation: growBar 2s ease forwards;
+}
+
+.bar div::after {
+  content: attr(data-percent);
+  position: absolute;
+  right: 10px;
+  top: -22px;
+  font-size: 0.75rem;
+  color: #fff;
 }
 
 footer {
