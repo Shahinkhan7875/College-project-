@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shahin Khan's Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shahin Khan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+
   <div class="glow"></div>
-  <header>
-    <h1>Shahin Khan</h1>
-    <p>Diploma Student | UPL University</p>
+
+  <header class="hero">
+    <h1>Hello, I'm <span>Shahin Khan</span></h1>
+    <p>A passionate Diploma student exploring Web & Tech at UPL University</p>
+    <a href="#contact" class="btn">Get in Touch</a>
   </header>
 
   <nav>
@@ -25,46 +28,55 @@
   <main>
     <section id="about" class="card animate">
       <h2>About Me</h2>
-      <p>I am Shahin Khan, a passionate Diploma student at UPL University. I love exploring tech, building websites, and continuously growing my skills.</p>
+      <p>I'm Shahin Khan, currently in my 4th semester at UPL University. I love problem-solving, collaborating with peers, and bringing interactive ideas to life using code. I believe in continuous growth and learning by doing.</p>
     </section>
 
     <section id="education" class="card animate delay1">
       <h2>Education</h2>
-      <ul>
-        <li>Diploma in Engineering — UPL University (4th Semester)</li>
-      </ul>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Diploma in Computer Engineering</h3>
+          <span>UPL University — 2022 to Present</span>
+          <p>Core subjects: Web Development, DBMS, C/C++, Networking</p>
+        </div>
+      </div>
     </section>
 
     <section id="skills" class="card animate delay2">
       <h2>Skills</h2>
-      <div class="skill"><span>Teamwork</span>
-        <div class="bar"><div style="width: 85%" data-percent="85%"></div></div>
-      </div>
-      <div class="skill"><span>Problem Solving</span>
-        <div class="bar"><div style="width: 75%" data-percent="75%"></div></div>
-      </div>
-      <div class="skill"><span>Web Design</span>
-        <div class="bar"><div style="width: 70%" data-percent="70%"></div></div>
-      </div>
+      <div class="skill"><span>Teamwork</span><div class="bar"><div style="width: 85%" data-percent="85%"></div></div></div>
+      <div class="skill"><span>Problem Solving</span><div class="bar"><div style="width: 75%" data-percent="75%"></div></div></div>
+      <div class="skill"><span>Web Design</span><div class="bar"><div style="width: 70%" data-percent="70%"></div></div></div>
     </section>
 
     <section id="projects" class="card animate delay3">
       <h2>Projects</h2>
-      <ul>
-        <li>Personal Portfolio Website</li>
-        <li>Team-based Assignments with Interactive UI</li>
-      </ul>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>A personal website to showcase my journey and skills.</p>
+        </div>
+        <div class="project-card">
+          <h3>Team Assignments UI</h3>
+          <p>Collaborated on academic projects with a responsive front-end.</p>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="card animate delay4">
-      <h2>Contact</h2>
-      <p>Email: shahin@example.com</p>
-      <p>Phone: +91-9876543210</p>
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p>Email: shahin@example.com | Phone: +91-9876543210</p>
     </section>
   </main>
 
   <footer>
-    <p>Made By Shahin Khan © 2025</p>
+    <p>Made with 💻 by Shahin Khan © 2025</p>
   </footer>
 
   <script src="script.js"></script>
